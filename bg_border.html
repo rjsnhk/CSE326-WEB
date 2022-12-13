@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background and borders</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comforter+Brush&display=swap" rel="stylesheet">
+    <style>
+        
+        #firstpara
+        {
+            
+            font-family: 'Comforter Brush', cursive;
+            font-size: 50px;
+            color:rgb(245, 42, 143);
+            background-color: #1d132e;
+            height: 55px;
+            color: rgb(34, 220, 158);
+            /* border-width: 5px;
+            border-color:rgb(185, 255, 35);
+            border-style: solid;  */
+            /* The upper 3 lines can be written like this */
+            border: 5px solid rgb(185, 255, 35);
+            border-radius: 15px;
+        }
+        #secondpara
+        {
+            
+            font-family: 'Comforter Brush', cursive;
+            font-size: 50px;
+            color:rgb(245, 42, 143);
+            background-color: #280c33;
+            height: 55px;
+            color: rgb(255, 58, 199);
+            border-top: 3px solid whitesmoke;
+            border-bottom: 3px solid rgb(193, 188, 41);
+            border-left: 3px solid rgb(63, 171, 151);
+            border-right: 3px solid rgb(208, 125, 125);
+            border-top-left-radius: 20px;
+            border-bottom-right-radius: 50px;
+            border-top-right-radius: 20px;
+            border-bottom-left-radius: 20px;
+
+        }
+        #thirdpara
+        {
+            height: 981px;
+            width: 981px;
+            background-image: url(https://fdn.gsmarena.com/imgroot/reviews/22/apple-iphone-14-pro-max/lifestyle/-1024w2/gsmarena_004.jpg);
+            border: 3px solid white;
+            background-repeat: no-repeat;
+            background-position: center center;
+            /* Entities of background position are in (x,y) */
+
+        }
+        h3
+        {
+            color:aqua;
+        }
+    </style>
+</head>
+<body bgcolor="black">
+    <h3>First Paragraph</h3>
+    <p id="firstpara">Here we will understand about backgrounds and borders </p>
+    <h3>Second Paragraph</h3>
+    <p id="secondpara">Here we will understand about backgrounds and borders </p>
+    <h3>Third Paragraph</h3>
+    <p id="thirdpara"></p>
+    <!-- <h3>Fourth Paragraph</h3>
+    <p id="fourthpara">Here we will understand about backgrounds and borders </p> -->
+</body>
+</html>

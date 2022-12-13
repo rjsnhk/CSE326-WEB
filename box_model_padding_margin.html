@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BoxModel,Padding,Margin</title>
+    <style>
+        *
+        {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+        body
+        {
+            background-color: rgb(211 184 217);
+        }
+        .container
+        {
+            background-color: rgb(236 227 249 / 71%);
+            border: 2px solid rgb(123, 0, 139);
+            /* padding: 80px;
+            margin: 30px; */
+            /* we can also left right top bottom padding and margin like border  */
+            /* The shortcut for adding left right top bottom margin is written like bellow  */
+            padding : 18px 18px 7px 33px ;
+            margin : 30px 12px 25px 12px ;
+            border-radius: 25px;
+            width: 850px;
+            height: 222px;
+             /* this is in the order top right bottom left like padding: top right bottom left */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p id="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque a tempore vel voluptatum atque sint, deleniti pariatur repudiandae incidunt praesentium. Praesentium minus maxime provident totam, maiores quia impedit quaerat nesciunt.</p>
+    </div>
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p id="second">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque a tempore vel voluptatum atque sint, deleniti pariatur repudiandae incidunt praesentium. Praesentium minus maxime provident totam, maiores quia impedit quaerat nesciunt.</p>
+    </div>
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p id="third">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque a tempore vel voluptatum atque sint, deleniti pariatur repudiandae incidunt praesentium. Praesentium minus maxime provident totam, maiores quia impedit quaerat nesciunt.</p>
+    </div>
+</body>
+</html>

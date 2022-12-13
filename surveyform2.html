@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+        *
+    {
+        font-family: 'Poppins', sans-serif;
+    }
+      body {
+        margin: 0;
+      }
+      .outbox {
+        background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+        height: 880px;
+        width: 1920px;
+        padding-top: 70px;
+      }
+      .inbox{
+        margin: auto;
+        border:1px hidden black;
+        border-radius: 15px;
+        height: 820px;
+        width: 790px;
+        background: #ffffffd6;
+        box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.258), 0 6px 20px 0 rgba(0, 0, 0, 0.252); 
+      } 
+      .heading
+      {
+        padding-left: 35px;
+        padding-top: 35px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: bold;
+        color: rgba(0, 0, 0, 0.933);
+        font-size: 23px;
+        border:1px hidden black;
+        border-radius: 15px;
+      }
+      .underline
+      {
+        margin-left: 35px;
+        margin-top: 1px;
+        /* background: rgb(99,250,218); */
+        background: linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%);
+        height: 4px;
+        width: 30px;
+      }
+      .subheading
+      {
+        padding-left: 35px;
+        font-size: 18px
+      }
+      #email
+      {
+        float: right;
+        padding-right: 300px;
+      }
+      .right
+      {
+        float: right;
+        padding-right: 41px;
+      }
+      #profession
+      {
+        float: right;
+        padding-right: 55px;
+      }
+      .left
+      {
+        padding-left: 35px;
+      }
+      .line1
+      {
+        margin-top: 30px;
+        margin-bottom: 10px;
+        font-weight: bold;
+      }
+      .line2
+      {
+        margin-top: 10px;
+        /* margin-bottom: 20px; */
+      }
+      .line3
+      {
+        margin-top: 30px;
+        font-weight: bold;
+      }
+      .line4
+      {
+        margin-top: 10px;
+      }
+      .line5
+      {
+        margin-top: 30px;
+        font-weight: bold;
+      }
+      .line6
+      {
+        margin-top: 10px;
+        padding-left: 35px;
+      }
+      .line7
+      {
+        margin-top: 30px;
+        font-weight: bold;
+      }
+      .line8
+      {
+        margin-top: 10px;
+        padding-left: 35px;
+      }
+      .line9
+      {
+        margin-top: 30px;
+        font-weight: bold;
+      }
+      .line10
+      {
+        margin-top: 10px;
+        padding-left: 35px;
+      }
+      .textbox
+      {
+        border: 2px solid rgb(163 157 157) ;
+        border-radius: 8px;
+        text-align: left;
+        height: 40px;
+        width: 300px;
+        background: #515ada00;
+      }
+      .textboxprof
+      {
+        padding-right: 75px;
+        border: 2px solid rgb(163 157 157) ;
+        border-radius: 8px;
+        text-align: left;
+        height: 44px;
+        width: 306px;
+        background: #515ada00;
+      }
+      .radio
+      {
+        margin-right: 100px;
+      }
+      .checkbox
+      {
+        margin-right: 40px;
+      }
+      textarea
+      {
+        height: 54px;
+        width: 705px;
+        border: 2px solid rgb(163 157 157);
+        border-radius: 12px;
+        background: #515ada00;
+        resize: none;
+      }
+      .btn
+      {
+        margin:auto;
+        border: 2px hidden ;
+        cursor:pointer;
+        padding-top: 16px;
+        font-size: 22px;
+        margin-top: 30px;
+        height: 50px;
+        width: 245px;
+        text-align: center;
+        /* font-weight: bold; */
+        /* border-image-slice: 2;
+        border-image-source: linear-gradient(to left, #743ad5, #d53a9d); */
+        border-radius: 80px;
+        background: linear-gradient(90deg, #ff75d9 0%, #5fb5ffde 100%); 
+        color: rgb(255 255 255);
+        box-shadow: 0 7px 15px 0 rgb(86 88 91 / 9%), 0 6px 20px 0 rgb(52 50 52 / 25%);
+      }
+      .btn:hover
+      {
+        border: 2px solid rgb(255, 255, 255) ;
+      }
+      .text{
+        text-transform: uppercase;
+	    /* background: linear-gradient(to right, #743ad5 , #d53a9d ); */
+	    /* -webkit-background-clip: text; */
+	    /* -webkit-text-fill-color: transparent; */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="outbox">
+        <div class="inbox">
+            <div class="heading">Survey Form</div>
+            <div class="underline"></div>
+            <div class="line1">
+                <span class="subheading" id="fname">Name</span>
+                <span class="subheading" id="email">Email</span>
+            </div>
+            <div class="line2">
+                <span class="left"><input type="text"   class="textbox" placeholder="Enter Your name..."></span>
+                <span class="right"><input type="email"   class="textbox" placeholder="Enter Your Email..."></span>
+            </div>
+            <div class="line3">
+                <span class="subheading" id="age">Age</span>
+                <span class="subheading" id="profession">Which option best describes you</span>
+            </div>
+            <div class="line4">
+                <span class="left">
+                    <input type="text"   class="textbox" placeholder="Enter Your Age...">
+                </span>
+                <span class="right">
+                    <select class="textboxprof">
+                        <option value="lawyer">Lawyer</option>
+                        <option value="developer">Developer</option>
+                        <option selected value="student">Student</option>
+                        <option value="teacher">Teacher</option>   
+                    </select>
+                </span>
+            </div>
+            <div class="line5">
+                <span class="subheading">
+                    Would you recomend GeeksforGeeks to a friend ?
+                </span>
+            </div>
+            <div class="line6">
+                <input type="radio">
+                <label class="radio">Yes</label>
+                <input type="radio">
+                <label class="radio">No</label>
+                <input type="radio">
+                <label class="radio">Maybe</label>
+            </div>
+            <div class="line7">
+                <span class="subheading">
+                    Languages and Frameworks known(check all that apply) 
+                </span>
+            </div>
+            <div class="line8">
+                <div>
+                    <input type="checkbox">
+                    <label class="checkbox">C</label>
+                    <input type="checkbox">
+                    <label class="checkbox">C++</label>
+                    <input type="checkbox">
+                    <label class="checkbox">C#</label> 
+                    <input type="checkbox">
+                    <label class="checkbox">Java</label> 
+                    <input type="checkbox">
+                    <label class="checkbox">Python</label> 
+                </div>         
+                <div>
+                    <input type="checkbox">
+                    <label class="checkbox">Javascript</label>
+                    <input type="checkbox">
+                    <label class="checkbox">React</label>
+                    <input type="checkbox">
+                    <label class="checkbox">Angular</label> 
+                    <input type="checkbox">
+                    <label class="checkbox">Django</label> 
+                    <input type="checkbox">
+                    <label class="checkbox">Spring</label> 
+                </div>         
+            </div>
+            <div class="line9">
+                <span class="subheading">
+                    Any comments or suggestions ? 
+                </span>
+            </div>
+            <div class="line10">
+                <textarea rows="3" cols="30"></textarea>
+            </div>
+            <div class="btn">
+                <div class="text"> submit</div>
+            </div>
+        </div>
+    </div>
+  </body>
+</html>
