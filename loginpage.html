@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+       #inbox
+        {
+            background: #161b22;
+            border: 1px hidden black;
+            border-top-right-radius: 120px;
+            border-bottom-left-radius: 120px;
+            box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.301), 0 6px 20px 0 rgba(0, 0, 0, 0.312);             
+            width: 710px;
+            height: 780px;
+            margin: auto;
+        }
+       #outbox
+        {
+            margin: auto;
+            height: 905px;
+            width: 905px;
+            border: 2px solid rgb(91, 216, 227);
+            background: rgb(43 60 105 / 93%);
+            text-align: center;
+            color: rgb(255, 255, 255);
+            /* border-top-left-radius: 150px;
+            border-bottom-right-radius: 150px; */
+        }
+        #header
+        {
+            margin-top: 60px;
+            padding-top: 60px;
+            padding-bottom: 40px;
+        }
+        #signin
+        {
+            margin: auto;
+            background: rgba(255, 255, 255, 0);
+            padding:2px;
+            border: 2px solid rgb(49, 194, 95);
+            cursor:pointer;
+            font-size: 18px;
+            border-radius: 8px;
+            margin-bottom: 22px;
+            margin-top: 30px;
+            height: 50px;
+            width: 500px;
+            text-align: center;
+            padding-bottom: 5px;
+            color: rgb(77, 192, 113);
+        }
+        #signin:hover{
+            /* color:rgb(255, 255, 255); */
+            /* background-color:rgba(49, 194, 71, 0.866); */
+            box-shadow: 0 0 0 3px rgba(81, 255, 0, 0.2);
+            transition: all 200ms ease-out;
+            text-shadow: 1px 1px 3px rgba(0, 255, 38, 0.437);
+        }
+        #guest:hover{
+            color: rgb(27, 113, 167);
+        }
+        #guest
+        {
+            cursor: pointer;
+            margin-top: 40px;
+            margin-bottom: 30px;
+            color: rgba(38, 172, 255, 0.868);
+        }
+        #notmember
+        {
+            font-size: 16px;
+        }
+        #register
+        {
+            color: rgba(38, 172, 255, 0.868);
+            cursor: pointer;
+        }
+        #register:hover{
+            color: rgb(27, 113, 167);
+
+        }
+        .all {
+            margin: auto;
+            padding: 8px;
+            border: 1px solid rgb(79, 146, 240) ;
+            border-radius: 8px;
+            text-align: left;
+            height: 50px;
+            width: 500px;
+            margin-bottom: 18px;
+            color: #b1d9f4;
+            background: #161b22;
+            font-size: 22px;
+        }
+        .all:hover{
+            box-shadow: 0 0 0 3px rgba(0, 149, 255, 0.2);
+            transition: all 200ms ease-out;
+            /* text-shadow: 1px 1px 3px rgba(0, 204, 255, 0.437); */
+        }
+        .all:active
+        {
+            box-shadow: 0 0 0 3px rgba(0, 149, 255, 0.2);
+            transition: all 200ms ease-out;
+        }
+    </style>
+</head>
+<body>
+    <div id="outbox">
+        <div id="inbox">
+            <div id="header" >
+                <img src="https://www.edigitalagency.com.au/wp-content/uploads/small-google-logo-png-transparent-background-210x70.png">
+            </div>
+            <div>
+                <input type="text"   class="all" placeholder="Enter Your name...">
+            </div>
+            <div>
+                <input type="text" id="pict"  class="all" placeholder="Paste your profilepic link here...">
+            </div>
+            <div>
+                <input type="email" id="email" class="all"  placeholder="Enter your Email..">
+            </div>
+            <div>
+                <input type="password" id="password"  class="all"  placeholder="Enter your password..">
+            </div>
+            <div id="signin" >
+                <p>Sign In</p>
+            </div>
+            <div id="guest">
+                <p>Guest Login</p>
+            </div>
+            <div id="notmember" >
+                <span id="memb">Not a member? </span><span id="register"> Register Now</span>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
